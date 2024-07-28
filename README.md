@@ -1,30 +1,34 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Overview
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **Icon Library:** React Icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features [Only UI Design]
+1. **Login Modal:**
+   - Users can log in using their email or username and password.
+   - Password visibility toggle using an eye icon.
+   - "Forgot Password?" link for password recovery.
 
-## Expanding the ESLint configuration
+2. **Register Modal:**
+   - Users can sign up by providing an email, username, and password.
+   - Password visibility toggle using an eye icon.
+   - Link to switch to the login modal if the user already has an account.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. **Post Creation:**
+   - Main interface includes a text area for creating a post.
+   - Button to open the login or register modals.
 
-- Configure the top-level `parserOptions` property like this:
+## How to Use
+1. **Login Credentials:**
+   - Email: `test`
+   - Password: `password`
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. **Instructions:**
+   - Open the application and click on the "Post" button to trigger the login modal.
+   - Use the provided credentials to log in.
+   - Alternatively, create a new account using the register modal.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
