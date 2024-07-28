@@ -4,8 +4,11 @@ import LoginModal from "./LoginModal";
 import { FaRegCommentAlt } from "react-icons/fa";
 import { MdOutlineThumbUpOffAlt } from "react-icons/md";
 import { BsEmojiAngryFill } from "react-icons/bs";
+interface HomeProps {
+  username: string;
+}
 
-const Home: React.FC = () => {
+const Home: React.FC<HomeProps> = ({ username }) => {
   const [showRegisterModal, setShowRegisterModal] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
 
@@ -31,7 +34,7 @@ const Home: React.FC = () => {
   return (
     <div className="bg-[#131319] min-h-screen flex flex-col items-center justify-center text-white">
       <div className="w-[700px] text-left">
-        <div className="text-[#C5C7CA] text-[28px]">Hello test,</div>
+        <div className="text-[#C5C7CA] text-[28px]">Hello {username},</div>
         <div className="text-[#7F8084] text-[16px] w-[580px]">
           How are you doing today? Would you like to share something with the
           community 🤗
